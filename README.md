@@ -1,2 +1,2 @@
-# Data-Structures-in-Golang
-A collection of data structures in Golang
+# Data Structures in Golang
+A collection of data structures implemented in Golang
