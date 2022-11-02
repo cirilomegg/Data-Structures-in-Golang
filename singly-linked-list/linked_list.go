@@ -24,18 +24,18 @@ func NewLinkedList() LinkedList {
 }
 
 func (list *LinkedList) Append(data int) {
-	element := Node{
+	element := &Node{
 		Data: data,
 	}
 
 	if list.Head == nil {
-		list.Head = &element
-		list.Tail = &element
+		list.Head = element
+		list.Tail = element
 		return
 	}
 
-	list.Tail.Next = &element
-	list.Tail = &element
+	list.Tail.Next = element
+	list.Tail = element
 }
 
 func (list *LinkedList) Contains(data int) bool {
